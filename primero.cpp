@@ -2,13 +2,15 @@
 #include<conio.h>
 using namespace std;
 int main(){
-    // Escriba un programa que calcule el valor de 1+2+3+...+n.
-    int n,suma = 0;
-    for(int a= 1; a <=n; a++){
-        suma +- a; // Corrigiendo el operador de suma
+    // Escribe un programa que calcule el valor de: 1+3+5+...+2n-1.
+ // solicitar los 10 numeros impares pares e impares por ejemplo.
+    int n, nele,suma = 0;
+    cout<<"Digite un numero para la suma:\n";
+    cin>>nele;
+    fo(int i = 1; 1<=2*nele-1; i++){
+        suma += i;
     }
-    cout<<"La suma de los numeros aumentados por si mismos es:\n";
-
-getch();
+    cout<<"la suma es:\n"<<suma<<endl;
+getch();    
     return 0;   
 }
