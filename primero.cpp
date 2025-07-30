@@ -1,19 +1,14 @@
 #include<iostream>
-#include<stdlib.h>
+#include<conio.h>
 using namespace std;
 int main(){
-    // Programa para que calcule x * y donde ambos sean enteros positivos.
-    int x, y, pow=1;
-    cout<<"Digite el valor de x:\n";
-    cin>>x;
-    cout<<"Digite el valor de y:\n";
-    cin>>y;
-
-    for (int i=1; i<=y; i++){
-
-        pow = pow * x;
+    // Escriba un programa que calcule el valor de 1+2+3+...+n.
+    int n,suma = 0;
+    for(int a= 1; a <=n; a++){
+        suma +- a; // Corrigiendo el operador de suma
     }
-    cout<<"El resultado de "<<x<<" elevado a "<<y<<" es: "<<pow<<endl;
-    system("pause");
+    cout<<"La suma de los numeros aumentados por si mismos es:\n";
+
+getch();
     return 0;   
 }
