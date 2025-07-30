@@ -1,13 +1,15 @@
 #include<iostream>
-// La sentencia while 
+#include<conio.h>
 using namespace std;
 int main(){
-int i = 10; // inicializamos i en 10
-while(i >= 1){ 
-    cout<<"El valor de i es:\n"<<i;
-    i--; // decrementamos el valor de i en 1
+    // programa con bucle do while
+    int i;
+    i=1;
+    do{
+        cout<<i<<endl;
+        i++; // lo que hace es incrementar i en 1
+    }while(i<=10); // mientras i sea menor o igual a 10 se ejecuta el bucle
+    getch(); // espera a que se presione una tecla antes de cerrar la consola
+    }
 }
-
-
-    return 0;
 }
