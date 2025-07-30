@@ -2,15 +2,15 @@
 #include<conio.h> // para usar getch()
 using namespace std;
 int main(){
-    int a, b = 0, c;
-    do{
-    cout << "Ingrese el primer numero: ";
-    cin>>a;
-    if(a>0){
-     b++; // Incrementa el contador de números positivos   
+    // Programa de la suma de los cuadrados de los 10 primeros enteros mayores que 10
+    int a = 0, cuadrado;
+    for (int i = 1; i <= 10; i++){
+
+        cuadrado = i*i;
+        a += cuadrado; // Suma de los cuadrados
+
     }
-    } while(a != 0);
-    cout<<"\nCantidad de numeros positivos: "<<b<<endl;
+    cout<<"La suma de los cuadrados de los 10 primeros enteros mayores que 10 es: " << a << endl;
     getch();
     return 0;   
 }
