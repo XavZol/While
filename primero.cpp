@@ -2,17 +2,18 @@
 #include<stdlib.h>
 using namespace std;
 int main(){
-    // Programa para leer los enteros que se introduzca un valor que [20-30] o se introduzca el valor 0. el programa debe entregar la suma de los numeros introducidos mayores a 0 introducidos.
-    int a, suma = 0;
-    do{
-        cout<<"Introduzca un valor entre 20 y 30\n";
-        cin>>a;
-        if (a > 0) {
-            suma += a;
-        }
-    }while(a < 20 || a > 30 && a != 0);
-    
-    cout<<"La suma de los numeros introducidos es: "<<suma<<endl;
+    // Programa para que calcule x * y donde ambos sean enteros positivos.
+    int x, y, pow=1;
+    cout<<"Digite el valor de x:\n";
+    cin>>x;
+    cout<<"Digite el valor de y:\n";
+    cin>>y;
+
+    for (int i=1; i<=y; i++){
+
+        pow = pow * x;
+    }
+    cout<<"El resultado de "<<x<<" elevado a "<<y<<" es: "<<pow<<endl;
     system("pause");
     return 0;   
 }
