@@ -1,27 +1,18 @@
 #include<iostream>
-#include<conio.h> // para usar getch()
+#include<stdlib.h>
 using namespace std;
 int main(){
-    // Programa lea la temperatura cada 4 horas por 24 horas y calcule la temperatura media del dia.
-    float temp, mayor=0, menor=999;
-    float total=0; promedio=0;
-
-    for( int a=0; a<24, a+=4){
-        cout<<"Digite temperatura de la hora"<<a<<":";
-        cin>>temp;
-        total += temp;
-        if (temp > mayor){
-            mayor = temp;
+    // Programa para leer los enteros que se introduzca un valor que [20-30] o se introduzca el valor 0. el programa debe entregar la suma de los numeros introducidos mayores a 0 introducidos.
+    int a, suma = 0;
+    do{
+        cout<<"Introduzca un valor entre 20 y 30\n";
+        cin>>a;
+        if (a > 0) {
+            suma += a;
         }
-        if (temp < menor){
-            menor = temp;
-        }
-        promedio = total / 6; // 24 horas / 4 horas por lectura = 6 lecturas
-
-        cout<<"Temperatura media hasta la hora "<<a<<": "<<promedio<<endl;
-        cout<<"Temperatura mayor hasta la hora "<<a<<": "<<mayor<<endl;
-        cout<<"Temperatura menor hasta la hora "<<a<<": "<<menor<<endl;
-    }
-    getch();
+    }while(a < 20 || a > 30 && a != 0);
+    
+    cout<<"La suma de los numeros introducidos es: "<<suma<<endl;
+    system("pause");
     return 0;   
 }
