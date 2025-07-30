@@ -2,14 +2,16 @@
 #include<stdlib.h>
 using namespace std;
 int main(){
-    // Escriba un programa que calcule el valor de: 1*2*3*4*5*n (factorial)
-    int a, i, resultado = 1;
-    cout<<"Digite un numero para obtener el factorial:\n";
+    // Escriba un programa que calcule el valor de: 1!+2!+3!+4!+5!+6!+n!            
+int n, i, j, factorial = 1, suma=0;
 
-    for(i=1; i<=5; i++){
-        resultado *= i; // Multiplicamos el resultado por i
-    }// siempre para multiplicacion interativa colocar 1 para iniciar.
-    cout<<"El resultado es: "<<resultado<<endl;
-system("pause"); 
+cout<<"Digite el numero de elementos a sumar:\n";
+cin>>n;
+for(i=1; i<=n; i++){
+    factorial *= i; // Calcular el factorial de i
+suma += factorial;  // Sumar el factorial al total
+}
+cout<<"La suma de los factoriales es: "<<suma<<endl;
+    system("pause"); 
     return 0;   
 }
