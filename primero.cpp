@@ -1,17 +1,18 @@
 #include<iostream>
 #include<stdlib.h>
+#include<math.h>
 using namespace std;
 int main(){
-    // Escriba un programa que calcule el valor de: 1!+2!+3!+4!+5!+6!+n!            
-int n, i, j, factorial = 1, suma=0;
-
-cout<<"Digite el numero de elementos a sumar:\n";
-cin>>n;
-for(i=1; i<=n; i++){
-    factorial *= i; // Calcular el factorial de i
-suma += factorial;  // Sumar el factorial al total
-}
-cout<<"La suma de los factoriales es: "<<suma<<endl;
-    system("pause"); 
+    // Escriba un programa que calcule el valor de: 1^2 + 2^2 + 3^2 + ... + n^2, donde n es un número entero positivo ingresado por el usuario.
+    int n, suma = 0, elevacion = 0;
+    cout << "Digite el numero de elememntos a sumar\n";
+    cin>>n;
+    for(int i=1; 1<=n; i++){
+        elevacion = pow(i, 2);
+        suma += elevacion;
+    }
+    cout<<"La suma de los cuadrados de los numeros es:\n";
+    cout<<suma<<"\n";
+        system("pause"); 
     return 0;   
 }
